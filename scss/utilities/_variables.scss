@@ -1,0 +1,37 @@
+//======================
+// Main Color variables
+//======================
+$color_primary:#fff;
+$color_text:#666666;
+$Color_branding:#46d9ad;
+$Color_button_default:#02d0ff;
+
+//======================
+// Buttons Color
+//======================
+$colors:(
+'default':#00CCFF,
+'success':#85e785,
+'error': #e37070,
+'warning':#ff7961,
+'info':#a47bff,
+
+);
+//======================
+// Grid themes Color
+//==================
+$gridthemescolor: (
+  '12':#7dd8ad,
+  '6':#1b8e99,
+  '4':#8aebfc,
+  '3':#cfaee5,
+  '5':#79ce8e,
+  '8':#e89878,
+  '7':#c46a70
+);
+
+//======================
+//Screen Sizes
+//==================
+$desktop-max:1400px;
+$mobile-min:320px;

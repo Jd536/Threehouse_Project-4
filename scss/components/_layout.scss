@@ -1,0 +1,15 @@
+.container{
+  width: 90%;
+  max-width: $desktop-max;
+  margin: auto;
+  color:$color_text;
+}
+.grid__row{
+  margin: 0;
+  padding: 0;
+  @include mobileflex;
+  .grid__col--9{
+    width: 100%;
+    margin-bottom: 1em;
+}
+}

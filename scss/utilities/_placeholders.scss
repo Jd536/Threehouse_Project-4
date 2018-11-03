@@ -1,0 +1,63 @@
+//=================
+// Navigation placeholder
+//================
+
+%nav__item {
+  width: 100%;
+  text-align: center;
+
+}
+
+//=======================
+//links
+//=======================
+%a{
+    text-decoration: none;
+}
+
+//=======================
+//Cards placeholder
+//=======================
+
+%card{
+  text-align:left;
+  a{
+    text-decoration: none;
+    color: $Color_button_default;
+  };
+  p{
+    text-align: left;
+  }
+  h1{
+    color: $Color_branding;
+  }
+}
+
+//=======================
+//Buttons placeholder
+//=======================
+%btn{
+  width: 100%;
+  padding:.5em 1.6em;
+  border-radius: .32em;
+  margin-bottom: 1em;
+  &:hover{
+    color: $color_primary;
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: initial;
+  }
+}
+
+//=======================
+//Buttons placeholder
+//======================
+%leftborder{
+        border-left: 5px solid $Color_branding;
+
+        border-radius: 0.2em;
+        font-style: oblique;
+        padding: 1em;
+
+}

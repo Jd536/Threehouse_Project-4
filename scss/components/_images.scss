@@ -1,0 +1,25 @@
+.img--avatar{
+    margin: 1em auto;
+    .grid__col--6 &{
+      display: flex;
+      margin-top: 1em;
+      }
+      &:hover{
+        
+      }
+  }
+
+
+.img--frame{
+    height: 200px;
+    width: 80%;
+    padding: 1em;
+    .grid__col--6 &{
+    width: 100%;
+    border: solid .5px $color_text;
+  &:hover{
+    transform: scale(1.01);
+    transition-duration: .5s;
+  }
+}
+}
