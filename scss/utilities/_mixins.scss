@@ -25,9 +25,3 @@
 //***************************
 //Grid theme colors
 //***************************
-
-@mixin themecolors ($color){
-  &theme__colors{
-    background-color: map-get($themes, $color);
-  }
-}

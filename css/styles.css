@@ -1,117 +1,592 @@
-/*
-Error: $number: 0.0003787879/px is not a unitless number for `percentage'
-        on line 14 of scss/components/_grids.scss
-        from line 6 of scss/components/_index.scss
-        from line 3 of scss/styles.scss
+* {
+  line-height: 1.5; }
 
-Backtrace:
-scss/components/_grids.scss:14
-scss/components/_index.scss:6
-scss/styles.scss:3
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/script/tree/funcall.rb:311:in `reformat_argument_error'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/script/tree/funcall.rb:158:in `rescue in _perform'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/script/tree/funcall.rb:127:in `_perform'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:270:in `block (3 levels) in visit_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:270:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:270:in `block (2 levels) in visit_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:266:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:266:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:266:in `block in visit_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:265:in `visit_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: $number: 0.0003787879/px is not a unitless number for `percentage'\A         on line 14 of scss/components/_grids.scss\A         from line 6 of scss/components/_index.scss\A         from line 3 of scss/styles.scss"; }
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/**
+ * reset list to default
+ */
+ul {
+  list-style: none; }
+
+.form .btn--default, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info, .grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors {
+  padding: .5em .7em;
+  margin-bottom: 1em;
+  border-radius: 0.2em; }
+  .btn--default:hover, .btn--success:hover, .btn--error:hover, .btn--warning:hover, .btn--info:hover, .grid__col--1.theme__colors:hover, .grid__col--2.theme__colors:hover, .grid__col--3.theme__colors:hover, .grid__col--4.theme__colors:hover, .grid__col--5.theme__colors:hover, .grid__col--6.theme__colors:hover, .grid__col--7.theme__colors:hover, .grid__col--8.theme__colors:hover, .grid__col--9.theme__colors:hover, .grid__col--10.theme__colors:hover, .grid__col--11.theme__colors:hover, .grid__col--12.theme__colors:hover {
+    opacity: 0.8; }
+
+.nav__item a {
+  text-decoration: none;
+  border-radius: .2em; }
+  .nav__item a:hover {
+    color: #fff;
+    background-color: #7bfea2;
+    width: 100%; }
+
+.img--avatar:hover, .img--frame:hover, .card .blockquote:hover {
+  transition-property: border-left;
+  transform: scale(1.1);
+  transition-duration: 1s; }
+
+.grid__col--9 {
+  width: 60%; }
+  .grid__col--9 .nav {
+    display: flex;
+    padding-top: .5em; }
+    @media (min-width: 769px) {
+      .grid__col--9 .nav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between; } }
+    @media (max-width: 768px) {
+      .grid__col--9 .nav {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0; } }
+  @media (max-width: 768px) {
+    .grid__col--9 {
+      width: 100%; } }
+
+.nav__item {
+  width: 100%;
+  text-align: center; }
+  .nav__item a {
+    width: 100%;
+    padding: 0.5em 0;
+    color: #848d90;
+    display: inline-block; }
+  @media (max-width: 768px) {
+    .nav__item {
+      margin-bottom: .8em;
+      text-align: center;
+      width: 100%; } }
+
+.container {
+  background-color: #fff;
+  color: #848d90;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  min-width: 320px;
+  max-width: 1400px;
+  font-family: 'Muli', sans-serif; }
+
+.grid__row {
+  display: flex;
+  width: 100%;
+  margin-top: .5em; }
+  @media (max-width: 768px) {
+    .grid__row {
+      flex-direction: column;
+      justify-content: center; } }
+  @media (min-width: 769px) {
+    .grid__row {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap; } }
+
+@media (max-width: 768px) {
+  .img--logo {
+    align-self: center;
+    display: block;
+    margin: auto; } }
+
+.img--avatar {
+  margin: auto; }
+  @media (min-width: 769px) {
+    .img--avatar {
+      margin-right: 2em; } }
+  @media (max-width: 768px) {
+    .img--avatar {
+      display: block;
+      margin: auto; } }
+
+.img--frame {
+  padding: 1em;
+  width: 90%;
+  margin: auto;
+  border: 1px solid; }
+  @media (max-width: 768px) {
+    .img--frame {
+      margin-bottom: 1em; } }
+
+.headline--secondary {
+  font-weight: lighter;
+  margin-bottom: 1em; }
+
+.card .headline--primary {
+  color: #7bfea2; }
+.card .link {
+  text-decoration: none;
+  color: #7bb2fe; }
+.card .blockquote {
+  border-left: 5px solid #7bfea2;
+  border-radius: .2em; }
+@media (min-width: 769px) {
+  .card {
+    margin-right: 0.5em;
+    padding-right: 2em; } }
+
+.form {
+  margin: .5em; }
+  .form .form__label--hidden {
+    display: none; }
+  .form .form__input {
+    border: none;
+    border-bottom: 4px solid #7bfea2;
+    margin-bottom: 1em; }
+  .form .btn--default {
+    width: 100%;
+    border: none;
+    background-color: #7bb2fe;
+    color: #fff; }
+  @media (max-width: 768px) {
+    .form {
+      display: flex;
+      flex-direction: column; } }
+
+.btn--default {
+  background-color: #848d90;
+  flex-grow: 1; }
+  @media (max-width: 768px) {
+    .btn--default {
+      width: 100%; } }
+
+.btn--success {
+  background-color: #20f85e;
+  flex-grow: 1; }
+  @media (max-width: 768px) {
+    .btn--success {
+      width: 100%; } }
+
+.btn--error {
+  background-color: #c97878;
+  flex-grow: 1; }
+  @media (max-width: 768px) {
+    .btn--error {
+      width: 100%; } }
+
+.btn--warning {
+  background-color: #ff7438;
+  flex-grow: 1; }
+  @media (max-width: 768px) {
+    .btn--warning {
+      width: 100%; } }
+
+.btn--info {
+  background-color: #a568a6;
+  flex-grow: 1; }
+  @media (max-width: 768px) {
+    .btn--info {
+      width: 100%; } }
+
+.grid__col--1.theme__colors {
+  width: 6.5%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--1.theme__colors {
+      width: 100%; } }
+
+.grid__col--2.theme__colors {
+  width: 15%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--2.theme__colors {
+      width: 100%; } }
+
+.grid__col--3.theme__colors {
+  width: 23.5%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--3.theme__colors {
+      width: 100%; } }
+
+.grid__col--4.theme__colors {
+  width: 32%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--4.theme__colors {
+      width: 100%; } }
+
+.grid__col--5.theme__colors {
+  width: 40.5%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--5.theme__colors {
+      width: 100%; } }
+
+.grid__col--6.theme__colors {
+  width: 49%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--6.theme__colors {
+      width: 100%; } }
+
+.grid__col--7.theme__colors {
+  width: 57.5%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--7.theme__colors {
+      width: 100%; } }
+
+.grid__col--8.theme__colors {
+  width: 66%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--8.theme__colors {
+      width: 100%; } }
+
+.grid__col--9.theme__colors {
+  width: 74.5%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--9.theme__colors {
+      width: 100%; } }
+
+.grid__col--10.theme__colors {
+  width: 83%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--10.theme__colors {
+      width: 100%; } }
+
+.grid__col--11.theme__colors {
+  width: 91.5%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--11.theme__colors {
+      width: 100%; } }
+
+.grid__col--12.theme__colors {
+  width: 100%;
+  margin-bottom: .5em; }
+  @media (max-width: 768px) {
+    .grid__col--12.theme__colors {
+      width: 100%; } }
+
+.grid__col--3.theme__colors {
+  background-color: #ed81ef; }
+
+.grid__col--12.theme__colors {
+  background-color: #98e2a1; }
+
+.grid__col--4.theme__colors {
+  background-color: #90f7fe; }
+
+.grid__col--6.theme__colors {
+  background-color: #3fa6ab; }
+
+.grid__col--5.theme__colors {
+  background-color: #69ec95; }
+
+.grid__col--7.theme__colors {
+  background-color: #ef8181; }
+
+.grid__col--8.theme__colors {
+  background-color: #ffa280; }
+
+.centered {
+  display: block;
+  margin: auto; }
+
+/*# sourceMappingURL=styles.css.map */
