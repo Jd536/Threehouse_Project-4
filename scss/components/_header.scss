@@ -4,7 +4,7 @@
 .grid__col--9 {
   width: 60%;
   .nav {
-    display: flex;
+    @include flexbox;
     padding-top: .5em;
   @include desktop{
     width: 100%;

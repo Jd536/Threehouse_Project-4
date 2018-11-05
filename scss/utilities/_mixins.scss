@@ -23,5 +23,9 @@
 }
 
 //***************************
-//Grid theme colors
+//Flexbox Mixin
 //***************************
+@mixin flexbox {
+  display: flex;
+  @content;
+}

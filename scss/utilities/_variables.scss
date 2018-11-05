@@ -1,4 +1,12 @@
 //***************************
+// Font stack variables
+//***************************
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Muli');
+
+
+$font-stack-primary:'Muli', sans-serif;
+$font-stack-secondary:'Montserrat', sans-serif;
+//***************************
 // Main Color variables
 //***************************
   $color-primary: #fff; //set the background color for the container(main)

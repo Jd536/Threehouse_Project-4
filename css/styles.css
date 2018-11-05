@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Muli");
 * {
   line-height: 1.5; }
 
@@ -306,11 +307,11 @@ template {
 ul {
   list-style: none; }
 
-.form .btn--default, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info, .grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors {
+.form .btn--default, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info, .grid__col--1, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--11, .grid__col--12 {
   padding: .5em 0;
   margin-bottom: 1em;
   border-radius: 0.2em; }
-  .btn--default:hover, .btn--success:hover, .btn--error:hover, .btn--warning:hover, .btn--info:hover, .grid__col--1.theme__colors:hover, .grid__col--2.theme__colors:hover, .grid__col--3.theme__colors:hover, .grid__col--4.theme__colors:hover, .grid__col--5.theme__colors:hover, .grid__col--6.theme__colors:hover, .grid__col--7.theme__colors:hover, .grid__col--8.theme__colors:hover, .grid__col--9.theme__colors:hover, .grid__col--10.theme__colors:hover, .grid__col--11.theme__colors:hover, .grid__col--12.theme__colors:hover {
+  .btn--default:hover, .btn--success:hover, .btn--error:hover, .btn--warning:hover, .btn--info:hover, .grid__col--1:hover, .grid__col--2:hover, .grid__col--3:hover, .grid__col--4:hover, .grid__col--5:hover, .grid__col--6:hover, .grid__col--7:hover, .grid__col--8:hover, .grid__col--9:hover, .grid__col--10:hover, .grid__col--11:hover, .grid__col--12:hover {
     opacity: 0.8; }
 
 .nav__item a {
@@ -369,12 +370,13 @@ ul {
   margin: auto;
   min-width: 320px;
   max-width: 1400px;
-  font-family: 'Muli', sans-serif; }
+  font-family: "Muli", sans-serif; }
 
 .grid__row {
   display: flex;
   width: 100%;
-  margin-top: .5em; }
+  margin-top: .5em;
+  margin-bottom: 1em; }
   @media (max-width: 768px) {
     .grid__row {
       flex-direction: column;
@@ -419,7 +421,8 @@ ul {
 
 .headline--secondary {
   font-weight: lighter;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-family: "Montserrat", sans-serif; }
 
 .card .headline--primary {
   color: #7bfea2; }
@@ -502,89 +505,113 @@ ul {
     .btn--info {
       width: 100%; } }
 
-.grid__col--1.theme__colors {
+.grid__col--1 {
   width: 6.5%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--1.theme__colors {
-      width: 100%; } }
+    .grid__col--1 {
+      width: 100%;
+      text-align: left; } }
 
-.grid__col--2.theme__colors {
+.grid__col--2 {
   width: 15%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--2.theme__colors {
-      width: 100%; } }
+    .grid__col--2 {
+      width: 100%;
+      text-align: left; } }
 
-.grid__col--3.theme__colors {
+.grid__col--3 {
   width: 23.5%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--3.theme__colors {
-      width: 100%; } }
+    .grid__col--3 {
+      width: 100%;
+      text-align: left; } }
 
-.grid__col--4.theme__colors {
+.grid__col--4 {
   width: 32%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--4.theme__colors {
-      width: 100%; } }
+    .grid__col--4 {
+      width: 100%;
+      text-align: left; } }
 
-.grid__col--5.theme__colors {
+.grid__col--5 {
   width: 40.5%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--5.theme__colors {
-      width: 100%; } }
+    .grid__col--5 {
+      width: 100%;
+      text-align: left; } }
 
-.grid__col--6.theme__colors {
+.grid__col--6 {
   width: 49%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--6.theme__colors {
-      width: 100%; } }
+    .grid__col--6 {
+      width: 100%;
+      text-align: left; } }
 
-.grid__col--7.theme__colors {
+.grid__col--7 {
   width: 57.5%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--7.theme__colors {
-      width: 100%; } }
+    .grid__col--7 {
+      width: 100%;
+      text-align: left; } }
 
-.grid__col--8.theme__colors {
+.grid__col--8 {
   width: 66%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--8.theme__colors {
-      width: 100%; } }
+    .grid__col--8 {
+      width: 100%;
+      text-align: left; } }
 
-.grid__col--9.theme__colors {
+.grid__col--9 {
   width: 74.5%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--9.theme__colors {
-      width: 100%; } }
+    .grid__col--9 {
+      width: 100%;
+      text-align: left; } }
 
-.grid__col--10.theme__colors {
+.grid__col--10 {
   width: 83%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--10.theme__colors {
-      width: 100%; } }
+    .grid__col--10 {
+      width: 100%;
+      text-align: left; } }
 
-.grid__col--11.theme__colors {
+.grid__col--11 {
   width: 91.5%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--11.theme__colors {
-      width: 100%; } }
+    .grid__col--11 {
+      width: 100%;
+      text-align: left; } }
 
-.grid__col--12.theme__colors {
+.grid__col--12 {
   width: 100%;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
   @media (max-width: 768px) {
-    .grid__col--12.theme__colors {
-      width: 100%; } }
+    .grid__col--12 {
+      width: 100%;
+      text-align: left; } }
 
 .grid__col--3.theme__colors {
   background-color: #ed81ef; }

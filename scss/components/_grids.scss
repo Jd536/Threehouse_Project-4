@@ -10,17 +10,20 @@
   // Generate column modifier classes
 
   .grid__col--#{$i}{
-    &.theme__colors{
+
       width: percentage($target / $context);
       margin-bottom: .5em;
       @extend %btn;
+      text-align: center;
       @include mobilesize{
         width: 100%;
+        text-align: left;
       }
-    }
+
 
   }
 }
+
 @each $theme, $col in $themes{
   .grid__col--#{$theme}{ &.theme__colors{
       background-color: $col;
