@@ -1,37 +1,47 @@
-//======================
+//***************************
 // Main Color variables
-//======================
-$color_primary:#fff;
-$color_text:#666666;
-$Color_branding:#46d9ad;
-$Color_button_default:#02d0ff;
+//***************************
+  $color-primary: #fff; //set the background color for the container(main)
+  $color-text: #848d90;
+  $color-branding: #7bfea2;
+  $color-button-default: #7bb2fe;
 
-//======================
-// Buttons Color
-//======================
-$colors:(
-'default':#00CCFF,
-'success':#85e785,
-'error': #e37070,
-'warning':#ff7961,
-'info':#a47bff,
+//***************************
+// Buttons Colors Map
+//***************************
 
-);
-//======================
-// Grid themes Color
-//==================
-$gridthemescolor: (
-  '12':#7dd8ad,
-  '6':#1b8e99,
-  '4':#8aebfc,
-  '3':#cfaee5,
-  '5':#79ce8e,
-  '8':#e89878,
-  '7':#c46a70
-);
+ $buttons:(
+  default :#848d90,
+  success :#20f85e,
+  error  :#c97878,
+  warning :#ff7438,
+  info    :#a568a6
+ );
 
-//======================
-//Screen Sizes
-//==================
-$desktop-max:1400px;
-$mobile-min:320px;
+ //***************************
+ //Grid themes colors
+ //***************************
+ $themes: (
+    '3' :#ed81ef ,
+    '12':#98e2a1,
+    '4' :#90f7fe,
+    '6' :#3fa6ab,
+    '5' :#69ec95,
+    '7' :#ef8181,
+    '8' :#ffa280
+ );
+ //***************************
+ //breakpoint size
+ //***************************
+
+ $mobile-breakpoint:   768px;
+ $desktop-breakpoint:  769px;
+
+ //***************************
+ // Grids
+ //***************************.
+
+ $g-col-width     :65px;
+ $g-gutter-width  :20px;
+ $g-col-count     :12;
+ $g-cont-max-w    :1050px;

@@ -1,0 +1,46 @@
+
+
+
+.grid__col--9 {
+  width: 60%;
+  .nav {
+    display: flex;
+    padding-top: .5em;
+  @include desktop{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+  @include mobilesize{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+}
+@include mobilesize{
+  width: 100%;
+}
+}
+
+.nav__item {
+  width: 100%;
+  text-align: center;
+  a{
+    width: 100%;
+    padding: 0.5em  0 ;
+    @extend %link;
+    color: $color-text;
+    display: inline-block;
+
+
+  }
+@include mobilesize {
+  margin-bottom: .8em;
+  text-align: center;
+  width: 100%;
+
+}
+
+}

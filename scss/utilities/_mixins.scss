@@ -1,23 +1,33 @@
-// Mixins
+//***************************
+//Center last grid theme__color
+//***************************
+@mixin center {
+  display: block;
+  margin: auto;
+}
 
-@mixin mobileflex {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+//***************************
+//media query mixins
+//***************************
+@mixin mobilesize{
+  @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width:$desktop-breakpoint) {
+  @content;
+    }
 
 }
-//===========================
-// Buttons mixin
-//===========================
-@mixin button{
-      background-color: $Color_button_default;
-      border: none;
-      border-radius: .2em;
-      color: $color_primary;
-      text-transform:uppercase;
-      padding:.5em;
-      &:hover{
-          opacity: 0.8;
-      }
-    }
+
+//***************************
+//Grid theme colors
+//***************************
+
+@mixin themecolors ($color){
+  &theme__colors{
+    background-color: map-get($themes, $color);
+  }
+}

@@ -1,63 +1,27 @@
-//=================
-// Navigation placeholder
-//================
-
-%nav__item {
-  width: 100%;
-  text-align: center;
-
-}
-
-//=======================
-//links
-//=======================
-%a{
-    text-decoration: none;
-}
-
-//=======================
-//Cards placeholder
-//=======================
-
-%card{
-  text-align:left;
-  a{
-    text-decoration: none;
-    color: $Color_button_default;
-  };
-  p{
-    text-align: left;
-  }
-  h1{
-    color: $Color_branding;
-  }
-}
-
-//=======================
-//Buttons placeholder
-//=======================
-%btn{
-  width: 100%;
-  padding:.5em 1.6em;
-  border-radius: .32em;
+%btn {
+  padding: .5em .7em;
   margin-bottom: 1em;
+  border-radius: 0.2em;
   &:hover{
-    color: $color_primary;
     opacity: 0.8;
   }
-  &:active{
-    opacity: initial;
-  }
 }
 
-//=======================
-//Buttons placeholder
-//======================
-%leftborder{
-        border-left: 5px solid $Color_branding;
+%link {
+  text-decoration: none;
+  border-radius: .2em;
+  &:hover{
+      color: $color-primary;
+      background-color: $color-branding;
+      width: 100%;
 
-        border-radius: 0.2em;
-        font-style: oblique;
-        padding: 1em;
+    }
 
+}
+%transform{
+  &:hover{
+    transition-property: border-left;
+    transform: scale(1.1);
+    transition-duration: 1s;
+  }
 }

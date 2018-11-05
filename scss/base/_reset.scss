@@ -339,13 +339,9 @@ template {
 [hidden] {
   display: none;
 }
-
 /**
- * Reset style list
+ * reset list to default
  */
- ul {
+ ul{
    list-style: none;
  }
- /**
-  * Reset links default
-  */

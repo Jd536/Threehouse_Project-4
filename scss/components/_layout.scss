@@ -1,15 +1,26 @@
 .container{
+  background-color: $color-primary;
+  color: $color-text;
+  display: flex;
+  flex-direction: column;
   width: 90%;
-  max-width: $desktop-max;
   margin: auto;
-  color:$color_text;
+  min-width: 320px;
+  max-width: 1400px;
+  font-family: 'Muli', sans-serif;
 }
-.grid__row{
-  margin: 0;
-  padding: 0;
-  @include mobileflex;
-  .grid__col--9{
-    width: 100%;
-    margin-bottom: 1em;
-}
+
+.grid__row {
+   display: flex;
+   width: 100%;
+   margin-top: .5em;
+   @include mobilesize {
+     flex-direction: column;
+     justify-content: center;
+     }
+     @include desktop{
+       flex-direction: row;
+       justify-content: space-between;
+       flex-wrap: nowrap;
+     }
 }

@@ -1,18 +1,49 @@
-.form{
+.headline--secondary{
+  font-weight: lighter;
+  margin-bottom: 1em;
+}
 
-  @include mobileflex;
-margin-top: 2em;
+.card{
+
+  .headline--primary{
+    color: $color-branding;
+  }
+  .link{
+    text-decoration: none;
+    color: $color-button-default;
+  }
+ .blockquote{
+   border-left: 5px solid $color-branding;
+   border-radius: .2em;
+   @extend %transform
+ }
+ @include desktop {
+   margin-right: 0.5em;
+   padding-right: 2em;
+ }
+}
+
+.form{
+margin: .5em;
 .form__label--hidden{
-      display: none;
-    }
-    .form__input{
-      border: none;
-      border-bottom: 3px solid $Color_branding;
-      margin-bottom: 1em;
-      padding:.5em;
-    }
-    button {
-      @include button;
-    }
+  display: none;
+}
+.form__input{
+  border:none;
+  border-bottom: 4px solid $color-branding;
+  margin-bottom: 1em;
+}
+.btn--default{
+  @extend %btn;
+  width: 100%;
+  border: none;
+  background-color: $color-button-default;
+  color: $color-primary;
+
+}
+@include mobilesize{
+  display: flex;
+  flex-direction: column;
+}
 
 }

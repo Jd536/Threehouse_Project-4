@@ -1,0 +1,11 @@
+
+@each $button, $color in  $buttons{
+  .btn--#{$button}{
+    background-color: $color;
+    @extend %btn;
+    flex-grow: 1;
+    @include mobilesize{
+      width: 100%;
+    }
+  }
+}
