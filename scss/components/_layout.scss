@@ -23,4 +23,13 @@
        justify-content: space-between;
        flex-wrap: nowrap;
      }
+     .grid__col--12 {
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       @include mobilesize{
+         flex-direction: column;
+         
+       }
+     }
 }

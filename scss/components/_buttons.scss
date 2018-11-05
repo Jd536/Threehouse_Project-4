@@ -2,10 +2,14 @@
 @each $button, $color in  $buttons{
   .btn--#{$button}{
     background-color: $color;
+    border:none;
     @extend %btn;
     flex-grow: 1;
+    color: white;
+    margin: .5em;
     @include mobilesize{
       width: 100%;
     }
+
   }
 }
